@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transportation Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Transportation Survey</h2>
+      </div>
+      <form id="stress_survey">
+        <div class="form-group">
+          <p>Have you been experiencing any of these stress related warning signs? Check all that apply:</p>
+          <input type="checkbox" name="warning_signs" value="sleep"> Loss of sleep.<br>
+          <input type="checkbox" name="warning_signs" value="overwhelmed">Feeling overwhelmed.<br>
+          <input type="checkbox" name="warning_signs" value="fatigue">Chronic fatigue.<br>
+          <input type="checkbox" name="warning_signs" value="digestive">Digestive issues.<br>
+          <input type="checkbox" name="warning_signs" value="mood">Irritability and mood swings.<br>
+        </div>
+        <div class="form-group">
+          <p>Do you have any of these health problems? Check all that apply:</p>
+          <input type="checkbox" name="health_problems" value="blood"> High blood pressure.<br>
+          <input type="checkbox" name="health_problems" value="anxiety">Anxiety.<br>
+          <input type="checkbox" name="health_problems" value="depression">Depression.<br>
+          <input type="checkbox" name="health_problems" value="weight">Weight gain/loss.<br>
+          <input type="checkbox" name="health_problems" value="headaches">Headaches.<br>
+          <input type="checkbox" name="health_problems" value="diabetes">Diabetes.<br>
+          <input type="checkbox" name="health_problems" value="death">Death.<br>
+        </div>
+        <div class="form-group">
+          <p>What do you do to help cope with stress? Check all that apply:</p>
+          <input type="checkbox" name="coping_methods" value="exercise"> Exercise.<br>
+          <input type="checkbox" name="coping_methods" value="meditate">Meditate.<br>
+          <input type="checkbox" name="coping_methods" value="pet">Play with a pet.<br>
+          <input type="checkbox" name="coping_methods" value="outside">Get outside.<br>
+          <input type="checkbox" name="coping_methods" value="lovers">Spend time with loved ones.<br>
+        </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="warning-responses">
+        <p><b>You said you have the following warning signs related to stress:</b></p>
+      </span>
+      <br>
+      <span id="health-responses">
+        <p><b>You are currently experiencing these health problems:</b></p>
+      </span>
+      <br>
+      <span id="coping-responses">
+        <p><b>You said you use the following coping methods to deal with stress:</b></p>
+      </span>
+    </div>
+  </body>
+</html>
