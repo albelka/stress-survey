@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Transportation Survey</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,23 +10,23 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h2>Stress Survey</h2>
       </div>
       <form id="stress_survey">
         <div class="form-group">
           <p>Have you been experiencing any of these stress related warning signs? Check all that apply:</p>
-          <input type="checkbox" name="warning_signs" value="sleep"> Loss of sleep.<br>
-          <input type="checkbox" name="warning_signs" value="overwhelmed">Feeling overwhelmed.<br>
-          <input type="checkbox" name="warning_signs" value="fatigue">Chronic fatigue.<br>
-          <input type="checkbox" name="warning_signs" value="digestive">Digestive issues.<br>
-          <input type="checkbox" name="warning_signs" value="mood">Irritability and mood swings.<br>
+          <input type="checkbox" name="warning_signs" value="sleep loss"> Loss of sleep.<br>
+          <input type="checkbox" name="warning_signs" value="feeling overwhelmed">Feeling overwhelmed.<br>
+          <input type="checkbox" name="warning_signs" value="chronic fatigue">Chronic fatigue.<br>
+          <input type="checkbox" name="warning_signs" value="digestive issues">Digestive issues.<br>
+          <input type="checkbox" name="warning_signs" value="mood swings">Irritability and mood swings.<br>
         </div>
         <div class="form-group">
           <p>Do you have any of these health problems? Check all that apply:</p>
-          <input type="checkbox" name="health_problems" value="blood"> High blood pressure.<br>
+          <input type="checkbox" name="health_problems" value="high blood pressure"> High blood pressure.<br>
           <input type="checkbox" name="health_problems" value="anxiety">Anxiety.<br>
           <input type="checkbox" name="health_problems" value="depression">Depression.<br>
-          <input type="checkbox" name="health_problems" value="weight">Weight gain/loss.<br>
+          <input type="checkbox" name="health_problems" value="weight gain or loss">Weight gain/loss.<br>
           <input type="checkbox" name="health_problems" value="headaches">Headaches.<br>
           <input type="checkbox" name="health_problems" value="diabetes">Diabetes.<br>
           <input type="checkbox" name="health_problems" value="death">Death.<br>
@@ -51,6 +51,14 @@
       <br>
       <span id="coping-responses">
         <p><b>You said you use the following coping methods to deal with stress:</b></p>
+      </span>
+      <br>
+      <span class="doctor">
+        <h2><b>You should see a doctor immediately to help resolve your issues, or else you may die!</b></h2>
+      </span>
+      <br>
+      <span class="healthy">
+        <h2><b>You're probably fine but don't stress out or google your symptoms because then you might die...</b></h2>
       </span>
     </div>
   </body>
